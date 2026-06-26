@@ -4,59 +4,76 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lily | Product Designer</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
   <main class="page-shell">
-    <section class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow">Product Designer</p>
-        <h1>Lily</h1>
-        <p class="hero-byline">Crafting calm, intuitive experiences with subtle Japanese tea-garden balance.</p>
-        <p class="intro">I design thoughtfully, blending quiet elegance and functional simplicity. My work centers on human moments, natural textures, and clear visual rhythm.</p>
+    <header class="hero">
+      <p class="eyebrow">Hi, I’m Lily</p>
+      <h1>Product design with clarity and confidence.</h1>
+      <p class="hero-text">
+        I design intuitive digital experiences that feel calm, modern, and distinctly human.
+      </p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#work">View work</a>
+        <a class="button button-secondary" href="#contact">Say hello</a>
       </div>
-      <div class="hero-aside">
+    </header>
+
+    <section id="about" class="section about-section">
+      <div>
+        <h2>About me</h2>
+        <p>
+          I’m a product designer focused on crafting thoughtful interfaces for startups and creative teams.
+          My process blends strategic research, minimalist visual systems, and a human-centered design practice.
+        </p>
+      </div>
+      <div class="stats-grid">
         <div class="stat-card">
-          <span>06 yrs</span>
-          <p>leading product design across digital and spatial brands</p>
+          <span>5+</span>
+          <p>Years designing digital products</p>
         </div>
-        <div class="stat-card soft">
-          <span>Past</span>
-          <p>mindful systems, calm interfaces, and serene user journeys</p>
+        <div class="stat-card">
+          <span>20+</span>
+          <p>Projects from concept to launch</p>
+        </div>
+        <div class="stat-card">
+          <span>Remote</span>
+          <p>Flexible collaboration with teams worldwide</p>
         </div>
       </div>
     </section>
 
-    <section class="section-grid">
-      <article class="section-card">
-        <h2>Design Philosophy</h2>
-        <p>Minimal structure, generous white space, and a green palette inspired by moss, bamboo, and shaded tea gardens. Every detail is chosen to feel natural, balanced, and grounded.</p>
-      </article>
-
-      <article class="section-card">
-        <h2>What I Do</h2>
-        <ul>
-          <li>Product strategy</li>
-          <li>Interaction design</li>
-          <li>Visual systems</li>
-          <li>Design direction</li>
-        </ul>
-      </article>
-
-      <article class="section-card">
-        <h2>Studio Values</h2>
-        <p>Quiet confidence, refined clarity, and a people-first approach. I work with teams who value craft, calm, and meaningful design.</p>
-      </article>
+    <section id="work" class="section work-section">
+      <div class="section-header">
+        <p class="section-label">Featured work</p>
+        <h2>Design systems, interfaces, and product strategy.</h2>
+      </div>
+      <div class="cards-grid">
+        <article class="work-card">
+          <span>Interface design</span>
+          <h3>Responsive product experience for a wellness app.</h3>
+          <p>Created a calm, accessible interface that supports coaching flows and daily rituals.</p>
+        </article>
+        <article class="work-card">
+          <span>Brand system</span>
+          <h3>Visual identity and UX system for a creative studio.</h3>
+          <p>Designed a cohesive green-forward brand language with flexible UI components.</p>
+        </article>
+        <article class="work-card">
+          <span>Product strategy</span>
+          <h3>Roadmap alignment for a subscription platform.</h3>
+          <p>Helped shape a product roadmap with clear priorities and user-focused outcomes.</p>
+        </article>
+      </div>
     </section>
 
-    <section class="footer-note">
-      <p>Inspired by Japandi stillness, a green tea ceremony, and the spaces where design feels as gentle as a breath.</p>
-    </section>
-
-    <section class="contact-card">
-      <h2>Contact Me</h2>
-      <p>Let’s talk about design systems, product storytelling, and quiet digital experiences. I’m available for freelance work, collaboration, and creative direction.</p>
-      <a class="contact-link" href="mailto:hello@lily.design">hello@lily.design</a>
+    <section id="contact" class="section contact-section">
+      <div>
+        <h2>Let’s build something useful together.</h2>
+        <p>Reach out for product design, UX strategy, or thoughtful visual systems.</p>
+      </div>
+      <a class="button button-primary" href="mailto:hello@lily.design">hello@lily.design</a>
     </section>
   </main>
 </body>
