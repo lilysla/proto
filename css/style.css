@@ -1,0 +1,241 @@
+:root {
+  color-scheme: light;
+  --bg: #f3f4ec;
+  --surface: #e4ebdc;
+  --surface-strong: #d5ddc5;
+  --text: #24332f;
+  --muted: #5b6f66;
+  --accent: #6a8a6d;
+  --shadow: 0 22px 61px rgba(44, 67, 53, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: "Georgia", "Times New Roman", serif;
+  color: var(--text);
+  background: radial-gradient(circle at top left, rgba(106, 138, 109, 0.16), transparent 28%),
+              radial-gradient(circle at bottom right, rgba(74, 98, 80, 0.12), transparent 24%),
+              var(--bg);
+  line-height: 1.75;
+}
+
+.page-shell {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 64px 32px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 40px;
+  align-items: start;
+  padding: 64px 0 48px;
+}
+
+.hero-copy {
+  padding: 48px 40px 40px;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(132, 148, 122, 0.18);
+  border-radius: 32px;
+  box-shadow: var(--shadow);
+}
+
+.eyebrow {
+  margin: 0 0 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-size: 0.84rem;
+  color: var(--accent);
+}
+
+h1 {
+  margin: 0;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, "Hiragino Kaku Gothic Pro", sans-serif;
+  font-size: clamp(4rem, 6vw, 7rem);
+  line-height: 0.9;
+  letter-spacing: -0.06em;
+  font-weight: 900;
+  color: #1e2d26;
+}
+
+.hero-byline {
+  margin: 24px 0 0;
+  max-width: 42rem;
+  font-size: 1.15rem;
+  color: var(--muted);
+}
+
+.intro {
+  margin: 28px 0 0;
+  max-width: 44rem;
+  font-size: 1.08rem;
+  color: var(--muted);
+}
+
+.hero-aside {
+  display: grid;
+  gap: 24px;
+  align-content: start;
+}
+
+.stat-card {
+  display: grid;
+  gap: 16px;
+  padding: 32px;
+  background: var(--surface);
+  border-radius: 28px;
+  border: 1px solid rgba(132, 148, 122, 0.15);
+}
+
+.stat-card span {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #354a40;
+}
+
+.stat-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.stat-card.soft {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.section-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
+  gap: 24px;
+  margin-top: 52px;
+}
+
+.section-card {
+  background: var(--surface-strong);
+  border-radius: 28px;
+  padding: 34px;
+  border: 1px solid rgba(132, 148, 122, 0.1);
+  box-shadow: 0 18px 46px rgba(58, 83, 62, 0.06);
+}
+
+.section-card h2 {
+  margin: 0 0 18px;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, "Hiragino Kaku Gothic Pro", sans-serif;
+  font-size: 1.35rem;
+  letter-spacing: -0.02em;
+  color: #2b3c35;
+}
+
+.section-card p,
+.section-card ul {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.98rem;
+}
+
+.section-card ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.section-card li::before {
+  content: "•";
+  margin-right: 10px;
+  color: var(--accent);
+}
+
+.footer-note {
+  margin-top: 56px;
+  padding: 40px 48px;
+  background: rgba(245, 247, 236, 0.9);
+  border-left: 4px solid var(--accent);
+  border-radius: 24px;
+}
+
+.footer-note p {
+  margin: 0;
+  font-size: 1rem;
+  color: #435347;
+}
+
+.contact-card {
+  margin-top: 48px;
+  padding: 36px 42px;
+  background: rgba(246, 249, 239, 0.95);
+  border-radius: 28px;
+  border: 1px solid rgba(132, 148, 122, 0.16);
+}
+
+.contact-card h2 {
+  margin: 0 0 18px;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, "Hiragino Kaku Gothic Pro", sans-serif;
+  font-size: 1.7rem;
+  color: #2b3c35;
+}
+
+.contact-card p {
+  margin: 0 0 18px;
+  color: var(--muted);
+  font-size: 1rem;
+  max-width: 38rem;
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.98rem;
+  color: #24332f;
+  text-decoration: none;
+  border: 1px solid rgba(106, 138, 109, 0.28);
+  padding: 0.95rem 1.5rem;
+  border-radius: 999px;
+  background: rgba(106, 138, 109, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(38, 60, 48, 0.1);
+}
+
+@media (max-width: 880px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-copy,
+  .hero-aside {
+    padding: 28px;
+  }
+
+  .section-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .page-shell {
+    padding: 36px 20px;
+  }
+
+  .hero-copy {
+    padding: 28px 22px;
+  }
+
+  .hero-aside {
+    gap: 18px;
+  }
+}
